@@ -1,5 +1,10 @@
 import Image from 'next/image';
+import TodoList from './_components/TodoList';
 
 export default function Home() {
-  return <h1 className='text-red-500'>Hello World!</h1>;
+  return (
+    <main className='max-w-3xl mx-auto mt-5'>
+      <TodoList />
+    </main>
+  );
 }

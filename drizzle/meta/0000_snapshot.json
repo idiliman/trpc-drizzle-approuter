@@ -1,7 +1,7 @@
 {
   "version": "5",
   "dialect": "pg",
-  "id": "8cc6867d-68f5-48ff-95b9-7ac5af0553ad",
+  "id": "5c94d1dc-e650-4f87-8732-8b20809cc4d4",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
     "todos": {
@@ -10,9 +10,10 @@
       "columns": {
         "id": {
           "name": "id",
-          "type": "integer",
-          "primaryKey": true,
-          "notNull": true
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "gen_random_uuid()"
         },
         "content": {
           "name": "content",

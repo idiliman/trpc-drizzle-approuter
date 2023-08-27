@@ -1,5 +1,5 @@
 CREATE TABLE IF NOT EXISTS "todos" (
-	"id" integer PRIMARY KEY NOT NULL,
+	"id" uuid DEFAULT gen_random_uuid(),
 	"content" text,
 	"done" integer
 );
